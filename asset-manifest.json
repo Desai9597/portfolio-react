@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio-react/static/css/main.4084be5b.css",
+    "main.js": "/portfolio-react/static/js/main.1a6b5043.js",
+    "static/js/453.5721f686.chunk.js": "/portfolio-react/static/js/453.5721f686.chunk.js",
+    "static/media/MCAGoldMedal.pdf": "/portfolio-react/static/media/MCAGoldMedal.3a11d3cccf87ec2e37b0.pdf",
+    "static/media/restaurant_logo.jpg": "/portfolio-react/static/media/restaurant_logo.e9f0d0f13e463183aebc.jpg",
+    "static/media/BCAGoldMedal.pdf": "/portfolio-react/static/media/BCAGoldMedal.6e31e96fdb31ddb3f4d2.pdf",
+    "static/media/quiz-logo.png": "/portfolio-react/static/media/quiz-logo.e0c0d4979d381b2e8736.png",
+    "static/media/placepicker_logo.png": "/portfolio-react/static/media/placepicker_logo.40b124f13edd97ddbc4b.png",
+    "static/media/viralPic.jpg": "/portfolio-react/static/media/viralPic.778a5af4c6d7ab8b6508.jpg",
+    "static/media/expense-tracker-logo.jpg": "/portfolio-react/static/media/expense-tracker-logo.f693f15c56da8d960b93.jpg",
+    "static/media/todolisticon.jpg": "/portfolio-react/static/media/todolisticon.49cb08ce29439841525f.jpg",
+    "static/media/shoppingCart.jpg": "/portfolio-react/static/media/shoppingCart.9024819ce3fb25947b37.jpg",
+    "static/media/tictactoe.png": "/portfolio-react/static/media/tictactoe.6a3430a03b1eacdc6387.png",
+    "index.html": "/portfolio-react/index.html",
+    "main.4084be5b.css.map": "/portfolio-react/static/css/main.4084be5b.css.map",
+    "main.1a6b5043.js.map": "/portfolio-react/static/js/main.1a6b5043.js.map",
+    "453.5721f686.chunk.js.map": "/portfolio-react/static/js/453.5721f686.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4084be5b.css",
+    "static/js/main.1a6b5043.js"
+  ]
+}
