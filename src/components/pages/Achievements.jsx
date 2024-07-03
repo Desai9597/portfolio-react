@@ -24,15 +24,22 @@ export const Achievements = () => {
                                                 <div className="text">{entry.name}
                                                 </div>
                                             </div>
-
-                                         <div>
+                                    {achievement.id === 2 ? 
+                                    <div>
+                                    <p className="download-actions">
+                                        <button className="download-button" onClick={() => window.open(`${entry.downloadLink}`, "_blank")}>
+                                            <PreviewIcon />
+                                        </button>
+                                    </p>
+                                </div>: <div />}
+                                      {/*   <div>
                                                 <p className="download-actions">
                                                     <button className="download-button" onClick={() => window.open(`${entry.downloadLink}`, "_blank")}>
                                                         <PreviewIcon />
                                                     </button>
                                                 </p>
                                             </div>
-                                           
+                                           */}
 
                                         </div>
                                     </React.Fragment>
