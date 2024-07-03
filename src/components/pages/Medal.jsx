@@ -5,13 +5,18 @@ import mcaPDF from "../../assets/files/MCAGoldMedal.pdf";
 
 export const Medal = () => {
   const params = useParams();
-console.log(params.medalId)
+  const bcaContent= console.log(params.medalId)
   return (
     <div>
       {params.medalId === "1" ? 
-         <iframe src={bcaPDF} width="100%" height="500px" title="BCAGoldMedal"/>
+    /*     <iframe src={bcaPDF} width="100%" height="500px" title="BCAGoldMedal"/>
          :
          <iframe src={mcaPDF} width="100%" height="500px" title="MCAGoldMedal"/>
+      */   
+          <a href={bcaPDF} target="_blank" >BCA link </a>
+         :
+         <a href={mcaPDF} target="_blank">MCA link</a>
+         
   }
 
  </div>

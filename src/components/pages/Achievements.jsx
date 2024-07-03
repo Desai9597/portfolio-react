@@ -25,13 +25,14 @@ export const Achievements = () => {
                                                 </div>
                                             </div>
 
-                                            <div>
+                                         <div>
                                                 <p className="download-actions">
                                                     <button className="download-button" onClick={() => window.open(`${entry.downloadLink}`, "_blank")}>
                                                         <PreviewIcon />
                                                     </button>
                                                 </p>
                                             </div>
+                                           
 
                                         </div>
                                     </React.Fragment>

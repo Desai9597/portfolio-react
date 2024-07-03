@@ -2,7 +2,7 @@ import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import profilePic from '../../assets/images/viralPic.jpg';
 import restaurantLogo from '../../assets/images/restaurant_logo.jpg';
-import placePickerLogo from "../../assets/images/restaurant_logo.jpg";
+import placePickerLogo from "../../assets/images/placepicker_logo.png";
 import shoppingLogo from '../../assets/images/shoppingCart.jpg';
 import todoListIcon from "../../assets/images/todolisticon.jpg";
 import tictactoeLogo from "../../assets/images/tictactoe.png";
