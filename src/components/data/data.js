@@ -1,5 +1,15 @@
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
+import profilePic from '../../assets/images/viralPic.jpg';
+import restaurantLogo from '../../assets/images/restaurant_logo.jpg';
+import placePickerLogo from "../../assets/images/restaurant_logo.jpg";
+import shoppingLogo from '../../assets/images/shoppingCart.jpg';
+import todoListIcon from "../../assets/images/todolisticon.jpg";
+import tictactoeLogo from "../../assets/images/tictactoe.png";
+import quizLogo from "../../assets/images/quiz-logo.png";
+import expenseTrackerLogo from '../../assets/images/expense-tracker-logo.jpg';
+
+
 export const navLinks = [
     {
         url: "/",
@@ -29,7 +39,7 @@ export const navLinks = [
 export const home = [
     {
         id:1,
-      pic: "./images/viralPic.jpg",
+      pic: profilePic,
       text: "HELLO I'M",
       name: "VIRAL DESAI",
       post: "FRONTEND DEVELOPER",
@@ -148,7 +158,7 @@ export const home = [
   export const projects = [
     {
         id: 1,
-        projectImage: "./images/restaurant_logo.jpg",
+        projectImage: restaurantLogo,
         title: "Red Chili Restaurant",
         desc: "A Restaurant Web App made in React, to allow food items to be added or removed in a cart. Checkout Form to place the order.",
         projectLink: "https://desai9597.github.io/RestaurantApp",
@@ -170,7 +180,7 @@ export const home = [
     },
     {
         id: 2,
-        projectImage: "./images/placepicker_logo.png",
+        projectImage: placePickerLogo,
         title: "Place Picker",
         desc: "App to allow user to select places they want to visit from the available places, and remove or update their favorite list.",
         projectLink: "https://desai9597.github.io/PlacePickerReact/",
@@ -192,7 +202,7 @@ export const home = [
     },
     {
         id: 3,
-        projectImage: "./images/shoppingCart.jpg",
+        projectImage: shoppingLogo,
         title: "Simply Shopping",
         desc: "App to allow user to select products from the available products, and add or remove quantity in cart.",
         projectLink: "https://desai9597.github.io/SimplyShopping/",
@@ -214,7 +224,7 @@ export const home = [
     },
     {
         id: 4,
-        projectImage: "./images/todolisticon.jpg",
+        projectImage: todoListIcon,
         title: "To Do App",
         desc: "App to create new to do items. Also includes features like allow update, delete and mark completed for any task.",
         projectLink: "https://desai9597.github.io/ToDoApp/",
@@ -240,7 +250,7 @@ export const home = [
     },
     {
         id: 5,
-        projectImage: "./images/tictactoe.png",
+        projectImage: tictactoeLogo,
         title: "TicTacToe Game",
         desc: "Game to play TicTacToe with 2 players. Also includes features like strike through line for winning, Scoreboard and Play Again.",
         projectLink: "https://desai9597.github.io/TicTacToe/",
@@ -262,7 +272,7 @@ export const home = [
     },
     {
         id: 6,
-        projectImage: "./images/quiz-logo.png",
+        projectImage: quizLogo,
         title: "Quiz",
         desc: "Quiz to let user answer the questions by selecting from multiple choices and finally show statistics.",
         projectLink: "https://desai9597.github.io/Quiz/",
@@ -284,7 +294,7 @@ export const home = [
     },
     {
         id: 7,
-        projectImage: "./images/expense-tracker-logo.jpg",
+        projectImage: expenseTrackerLogo,
         title: "Expense Tracker",
         desc: "Tracker to allow adding new expense and then showing all the expenses month-wise and filtered by year. Displayed in List and Bar chart.",
         projectLink: "https://desai9597.github.io/ExpenseTracker/",
