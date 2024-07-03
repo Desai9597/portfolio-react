@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primaryBackground: #212222;
+  --secondaryBackground: #2f3030;
+  --primaryColor: #e0a80d;
+  --greyDark: #7d8792;
+  --headingColor: #2d2e2e;
+  --white: #fff;
+  --black: #000;
+  --sliver: #bac8d3;
+}
+body {
+  background-color: var(--headingColor);
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: var(--greyDark);
+  text-decoration: none;
+  transition: 0.5s;
+}
+a:hover {
+  color: var(--primaryColor);
+}
+p {
+  color: var(--sliver);
+  font-size: 15px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+.container{
+  max-width: 90%;
+  margin: auto;
+}
+
+.flexsb{
+  display: flex;
+  justify-content: space-between;
+}
+
+button{
+  color: var(--white);
+  background: none;
+  background-color: var(--primaryColor);
+  padding: 15px 50px;
+  border: none;  
+  border-radius: 50px;
+  margin-top: 20px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.fontSize {
+  font-size: 20px;
+}
+
+/*-------------header----------*/
+.title{
+  text-align: left;
+}
+header{
+  background-color: var(--headingColor);
+  height: 10vh;
+  line-height: 10vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+header a {
+  margin-left: 40px;
+}
+
+/* dont display for big screen */
+.hamburgerMenu{
+  display:none;
+}
+
+/* display hamburger menu for small screen, and show links in block way one in each row */
+@media screen and (max-width: 768px){
+
+  .hamburgerMenu {
+    display: block;
+    font-size: 25px;
+    background: none;
+  }
+  .showLinksInMenu{
+    display: block;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background-color: var(--headingColor);
+  }
+  .hideLinksInMenu{
+    display: none;
+  }
+  header a{
+    width: 100%;
+    display: block;
+    color: var(--white);
+  }
+}
+
+/*-----end of Header-----*/
+
+section{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+/*-----Hero-----*/
+.hero{
+  position: relative;
+}
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+}
+.heroContent{
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+}
+.hero h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+.hello{
+  color: var(--sliver);
+  font-size: 15px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+.left{
+  width: 35%;
+  flex: 1;
+}
+.right{
+  width:65%;
+  flex: 1;
+}
+.myPic{
+  width: 70%;
+  height: 70%;  
+  margin:auto;
+}
+/*-------hero------*/
+
+.heading {
+  font-size: 30px;
+  color: var(--primaryColor);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+/*---projects----*/
+
+
+.projects, .skills, .achievements, .contact {
+  list-style:none;
+  display: grid;
+  grid-template-columns:  repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+  width: 90%;
+  max-width:70rem;
+  margin: auto;
+  padding: 1rem;
+}
+
+.projects .box,.skills .box,.achievements .box, .contact .box {
+  background-color: var(--primaryBackground);
+  border-radius: 10px;
+  overflow:hidden;
+  text-align: center;
+
+}
+
+/*
+.projects article{
+  border: 1rem;
+  margin: auto;
+}*/
+
+.projects img {
+  width: 100%;
+  height: 20rem;
+ /* object-fit: contain;*/
+ object-fit:cover;
+}
+.projects,.skills .text  {
+  padding: 10px 10px;
+
+}
+label {
+  color: var(--primaryColor);
+  margin: 2px 0;
+  display: inline-block;
+  font-weight:bold;
+  font-size:1.5rem;
+}
+.project-actions {
+  margin: 0.5rem 0.5rem;
+}
+
+.project-button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #ffb404;
+  border: 1px solid #ffc404;
+  color: #1f1a09;
+  padding: 0.5rem ;
+  margin: 0.5rem ;
+  border-radius: 4px;
+}
+.project-button:hover,
+.project-button:active {
+  background-color: #ff8204;
+  border-color: #ffab04;
+  color: #1f1a09;
+}
+
+.project-tags {
+  display: inline-block;
+  background-color: var(--secondaryBackground);
+  color: var(--silver);
+  font-size: 0.9rem;  
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem 0.5rem;
+  border-radius: 4px;
+}
+
+.skill-entry{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.percentValue{
+  padding-right: 0.5rem;
+}
+
+.progressBar{
+  width: 95%;
+  height: 0.5rem;
+  background-color: var(--secondaryBackground) ;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  overflow: hidden;
+}
+.skillProgress{
+  height: 0.5rem;
+  background-color: var(--greyDark);
+  border-radius: 0.5rem;
+  transition: all 0.5s ease-in-out;
+  animation: progressBarAnimation 1s ease-in-out;
+}
+
+@keyframes progressBarAnimation{
+  0%{
+    width: 0%;
+  }
+
+}
+
+.timeline-element{
+  background-color: var(--primaryBackground);
+}
+.timeline-item{
+  color: var(--silver);
+  font-weight: bolder;
+}
+.box-title{
+  padding: 1rem;
+}
+.achievement-entry{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  
+}
+.leftSide .text{
+  text-align: left;
+}
+.leftSide{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 95%;
+}
+.trophy{
+  margin:1rem;
+}
+.leftSide .textLabel{
+  margin: 2rem;
+}
+.download-actions {
+  margin: 0.5rem 0.5rem;
+}
+.download-button {
+  font: inherit;
+  cursor: pointer;
+  background-color: var(--secondaryBackground);
+  border: 1px solid #ffc404;
+  color:var(--silver);
+  padding: 0.1rem 0.1rem;
+  margin: 0.1rem 0.1rem;
+  border-radius: 4px;
+}
+.download-button:hover,
+.download-button:active {
+  background-color: #ffc404;
+  border-color: #ffab04;
+  color: #1f1a09;
+}
+.contact-items{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.contact-text{
+  padding-left:2rem;
+}
+.input-text{
+  border-radius: 0.5rem;
+  padding: 0.5px;
+  border: 1px solid var(--secondaryBackground);
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1rem;  
+  font-family: "Poppins", sans-serif;  
+}
+.input-height{
+  height: 2rem;
+}
+.icon-text{
+  cursor:pointer;
+}
